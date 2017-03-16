@@ -1,8 +1,14 @@
 # Morning Exercies
 
-index=1
-100.times do
-    index^2
-    index+1
+(1..10).each do |x|
+   squared = x ** 2
+    puts squared
+    sum
 end
-puts index
+
+sum = 0
+(1..10).each do |i|
+  sum += i
+end
+
+puts sum
