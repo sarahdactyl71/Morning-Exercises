@@ -1,11 +1,11 @@
 #Morning Exercies March 16th
 #Fibonacci
-def fibonacci (x)
-array=[1..25]
- fib = []
- array.each do |x|
-     y =(x-1)+(x+2)
-     fib << y
+def fibonacci (n)
+    if n < 2
+    n 
+    else
+    fibonacci((n-1)+(n-2))
+    end
 end
-puts fib
+puts fibonacci(1..25)
 
